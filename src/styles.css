@@ -59,6 +59,10 @@ p {
   font-size: 25px;
 }
 
+#github {
+  text-align: center;
+}
+
 #celsius,
 #fahrenheit {
   cursor: pointer;
