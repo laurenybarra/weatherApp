@@ -1,0 +1,148 @@
+form,
+h1,
+h3,
+h4,
+i {
+  position: relative;
+}
+
+.heading {
+  padding: 20px 0;
+  text-align: center;
+}
+
+form,
+#current-city {
+  display: inline;
+}
+
+#search-button {
+  background: grey;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 30px;
+  border: gray 1px solid;
+}
+
+#search-button:hover {
+  background: white;
+  color: grey;
+}
+
+#current-city {
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: blue solid 2px;
+}
+
+#current-city:hover {
+  background: white;
+  color: blue;
+}
+
+input {
+  width: 50%;
+}
+
+h3 {
+  text-align: end;
+  bottom: 55px;
+}
+
+span {
+  text-align: right;
+}
+
+p {
+  font-size: 25px;
+}
+
+#celsius,
+#fahrenheit {
+  cursor: pointer;
+}
+
+#celsius:hover,
+#fahrenheit:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.cel-far {
+  font-size: 35px;
+  bottom: 10px;
+}
+
+.col:nth-of-type(2) {
+  padding: 0;
+}
+
+.container,
+.forcast-day1,
+.forcast-day2,
+.forcast-day3,
+.forcast-day4,
+.forcast-day5,
+.weather-today {
+  border: 2px solid blue;
+}
+
+.city,
+.date,
+.forcast h4 {
+  top: 20px;
+}
+
+.current-degree {
+  bottom: 120px;
+}
+
+.fa-cloud,
+.fa-cloud-rain,
+.forcast .fa-sun {
+  font-size: 40px;
+  left: 47%;
+  bottom: 15px;
+}
+
+.fa-cloud,
+.fa-cloud-rain {
+  color: gray;
+}
+
+.fa-sun {
+  color: orange;
+}
+
+.forcast-day1 {
+  margin: 0 15px 15px 15px;
+}
+
+.forcast-day1,
+.forcast-day2,
+.forcast-day3,
+.forcast-day4,
+.forcast-day5 {
+  height: 80px;
+}
+
+.forcast-day2,
+.forcast-day3,
+.forcast-day4,
+.forcast-day5 {
+  margin: 15px;
+}
+
+.weather-today {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-align: center;
+  height: 460px;
+}
+
+.weather-today .fa-sun {
+  font-size: 250px;
+  top: 30px;
+}
