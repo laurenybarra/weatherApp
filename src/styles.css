@@ -1,19 +1,80 @@
+.cel-fahr {
+  font-size: 35px;
+}
+
+.cel-fahr .on {
+  color: #595959;
+  cursor: default;
+}
+
+.cel-fahr,
+.city,
+#current-degree,
+.date,
+#description,
+.humidity,
+#icon,
+#update,
+.wind {
+  top: 20px;
+}
+
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+}
+
+.container {
+  width: 60%;
+  background: #e6f3ff;
+  border-radius: 30px;
+  border: 2px solid blue;
+}
+
+.date {
+  font-size: 30px;
+}
+
+#description {
+  text-transform: capitalize;
+}
+
+form {
+  display: inline;
+}
+
 form,
 h1,
+h2,
 h3,
 h4,
-i {
+h6,
+img {
   position: relative;
 }
 
-.heading {
-  padding: 20px 0;
+#github,
+.heading,
+.weather-today {
   text-align: center;
 }
 
-form,
-#current-city {
-  display: inline;
+.heading {
+  padding-top: 10px;
+}
+
+.humidity,
+.wind {
+  top: 50px;
+}
+
+input {
+  width: 50%;
+  border: none;
+}
+
+p {
+  font-size: 25px;
 }
 
 #search-button {
@@ -29,124 +90,8 @@ form,
   color: grey;
 }
 
-#current-city {
-  background: blue;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  border: blue solid 2px;
-}
-
-#current-city:hover {
-  background: white;
-  color: blue;
-}
-
-input {
-  width: 50%;
-}
-
-h3 {
-  text-align: end;
-  bottom: 55px;
-}
-
-span {
-  text-align: right;
-}
-
-p {
-  font-size: 25px;
-}
-
-#github {
-  text-align: center;
-}
-
-#celsius,
-#fahrenheit {
-  cursor: pointer;
-}
-
-#celsius:hover,
-#fahrenheit:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-.cel-far {
-  font-size: 35px;
-  bottom: 10px;
-}
-
-.col:nth-of-type(2) {
+.weather-conditions,
+.weather-today {
+  height: 370px;
   padding: 0;
-}
-
-.container,
-.forcast-day1,
-.forcast-day2,
-.forcast-day3,
-.forcast-day4,
-.forcast-day5,
-.weather-today {
-  border: 2px solid blue;
-}
-
-.city,
-.date,
-.forcast h4 {
-  top: 20px;
-}
-
-.current-degree {
-  bottom: 120px;
-}
-
-.fa-cloud,
-.fa-cloud-rain,
-.forcast .fa-sun {
-  font-size: 40px;
-  left: 47%;
-  bottom: 15px;
-}
-
-.fa-cloud,
-.fa-cloud-rain {
-  color: gray;
-}
-
-.fa-sun {
-  color: orange;
-}
-
-.forcast-day1 {
-  margin: 0 15px 15px 15px;
-}
-
-.forcast-day1,
-.forcast-day2,
-.forcast-day3,
-.forcast-day4,
-.forcast-day5 {
-  height: 80px;
-}
-
-.forcast-day2,
-.forcast-day3,
-.forcast-day4,
-.forcast-day5 {
-  margin: 15px;
-}
-
-.weather-today {
-  margin-bottom: 15px;
-  margin-left: 15px;
-  text-align: center;
-  height: 460px;
-}
-
-.weather-today .fa-sun {
-  font-size: 250px;
-  top: 30px;
 }
