@@ -8,7 +8,6 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/9c4e4ec413.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
@@ -16,81 +15,34 @@
     <div class="container">
         <div class="heading">
             <form id="search-city">
-                <input type="text" placeholder="Search" />
+                <input type="text" placeholder="Enter city" />
                 <button id="search-button">Search</button>
             </form>
-            <button id="current-city">
-                <i class="fas fa-location-arrow"></i>
-            </button>
         </div>
         <div class="row">
             <div class="weather-today col">
-                <h1 class="city">
-                    Los Angeles
-                </h1>
-                <h4 class="date">
-                    Sunday Dec. 19
-                </h4>
-                <i class="fas fa-sun"></i>
-                <h1 class="current-degree">
-                    30°
-                </h1>
-                <h4 class="cel-far">
-                    <span id="celsius"></span>
-
-                    <span id="fahrenheit"></span>
+                <h1 class="city"></h1>
+                <h4 id="description"></h4>
+                <img src="." alt="Clear" id="icon" />
+                <h1 id="current-degree"></h1>
+                <h4 class="cel-fahr">
+                    <a href="." id="celsius" class="on">C°</a>
+                    |
+                    <a href="." id="fahrenheit">F°</a>
                 </h4>
             </div>
-            <div class="forcast col">
-                <div class="forcast-day1">
-                    <h4>
-                        Monday
-                    </h4>
-                    <i class="fas fa-sun"></i>
-                    <h3>
-                        80°
-                    </h3>
-                </div>
-                <div class="forcast-day2">
-                    <h4>
-                        Tuesday
-                    </h4>
-                    <i class="fas fa-sun"></i>
-                    <h3>
-                        73°
-                    </h3>
-                </div>
-                <div class="forcast-day3">
-                    <h4>
-                        Wednesday
-                    </h4>
-                    <i class="fas fa-cloud"></i>
-                    <h3>
-                        70°
-                    </h3>
-                </div>
-                <div class="forcast-day4">
-                    <h4>
-                        Thursday
-                    </h4>
-                    <i class="fas fa-sun"></i>
-                    <h3>
-                        71°
-                    </h3>
-                </div>
-                <div class="forcast-day5">
-                    <h4>
-                        Friday
-                    </h4>
-                    <i class="fas fa-cloud-rain"></i>
-                    <h3>
-                        68°
-                    </h3>
-                </div>
+            <div class="weather-conditions col">
+                <h1 id="update">Last updated on: <br /><span class="date"></span></h1>
+                <h2 class="wind">Wind: <span id="wind"></span>km/h</h2>
+                <h2 class="humidity">Humidity: <span id="humidity"></span>%</h2>
             </div>
         </div>
     </div>
-     <p id="github"><a href="https://github.com/laurenybarra/weatherApp.git">Open-source code</a> by Lauren Ybarra</p>
+    <p id="github">
+        <a href="https://github.com/laurenybarra/weatherApp.git">Open-source code</a>
+        by Lauren Ybarra
+    </p>
 </body>
 <script src="src/index.js"></script>
+
 </html>
